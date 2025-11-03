@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout Repo') {
             steps {
-                git url: 'https://github.com/your/repo.git'
+                git url: 'https://github.com/Jackalseegit/Terrademo.git'
             }
         }
 
