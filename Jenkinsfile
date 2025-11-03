@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout Repo') {
             steps {
-                git url: 'https://github.com/Jackalseegit/Terrademo.git'
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '0e5d94c5-42a6-4463-957a-9c2478d05ad4', url: 'https://github.com/Jackalseegit/Terrademo.git']])
             }
         }
 
